@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persistance>
+	<persistance-unit name = "myApp" transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.ejb.HibernatePersistance</provider>
+		<properties>
+		
+		
+		
+		
+		
+		</properties>
+	</persistance-unit>
+</persistance>

@@ -1,0 +1,26 @@
+
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+  http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+	version="2.1">
+
+	<persistance-unit name="myApp"
+		transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.ejb.HibernatePersistance</provider>
+		<properties>
+			<property name="javax.persistance.jdbc.driver"
+				value="org.h2.Driver" />
+			<property name="javax.persistance.jdbc.url"
+				value="jdbc:h2:~/test" />
+			<property name="javax.persistance.jdbc.username" value="sa" />
+			<property name="javax.persistance.jdbc.password" value="" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+			<property name="hibernate.dialect"
+				value="org.hibernate.dialect.H2dialect" />
+			<property name="hibernate.hdm2ddl.auto" value="update" />
+		</properties>
+	</persistance-unit>
+	
+</persistance>
